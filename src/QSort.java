@@ -1,32 +1,28 @@
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
 public class QSort {
-    public Integer[] sort(Integer array[]) {
-        System.out.println("Start sorting!");
+    public List<Integer> sort(List<Integer> array) {
+        if(array.size() > 1) {
 
-        if(array.length > 1) {
+            int pivot = array.get(0);
+            List<Integer> less = new ArrayList<>();
+            List<Integer> greater = new ArrayList<>();
 
-            int pivot = array[0];
-            System.out.println("Pivot: " + pivot);
-
-            List<Integer> less = new ArrayList<Integer>();
-            List<Integer> greater = new ArrayList<Integer>();
-
-            for (int i = 0; i < array.length; i++) {
-                if (array[i] < pivot){
-                    less.add(array[i]);
-                    System.out.println("Less: " + array[i]);
+            for (int i = 0; i < array.size(); i++) {
+                if (array.get(i) < pivot){
+                    less.add(array.get(i));
                 }
-                else if (array[i] > pivot){
-                    greater.add(array[i]);
-                    System.out.println("Greater: " + array[i]);
+                else if (array.get(i) > pivot){
+                    greater.add(array.get(i));
                 }
             }
-            Integer[] lessArray = new Integer[less.size()];
-            lessArray = less.toArray(lessArray);
-
-            return sort(lessArray);
+            array.clear();
+            array.addAll(sort(less));
+            array.add(pivot);
+            array.addAll(sort(greater));
+            return array;
         }
         return array;
     }
