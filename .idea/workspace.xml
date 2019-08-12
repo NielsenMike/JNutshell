@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c29ba77-49f2-4fb0-844c-fdf8405a6ef3" name="Default Changelist" comment="Quicksort changes!&#10;&#10;still need to be tested!">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JNutshell/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JNutshell/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JNutshell/QSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JNutshell/QSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/QSort.java" afterDir="false" />
-    </list>
+    <list default="true" id="8c29ba77-49f2-4fb0-844c-fdf8405a6ef3" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +73,14 @@
       <option name="presentableId" value="Default" />
       <updated>1563345493317</updated>
     </task>
+    <task id="LOCAL-00001" summary="Quicksort changes!&#10;&#10;still need to be tested!">
+      <created>1565625639487</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1565625639487</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
