@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c29ba77-49f2-4fb0-844c-fdf8405a6ef3" name="Default Changelist" comment="" />
+    <list default="true" id="8c29ba77-49f2-4fb0-844c-fdf8405a6ef3" name="Default Changelist" comment="KNN Algorithm approach!">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/KNearest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TestData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JNutshell/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JNutshell/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JNutshell/QSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JNutshell/QSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/QSort.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +40,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -80,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565625639487</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Workspace changes!">
+      <created>1565625979563</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1565625979563</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -88,7 +104,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -96,6 +114,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Quicksort changes!&#10;&#10;still need to be tested!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Quicksort changes!&#10;&#10;still need to be tested!" />
+    <MESSAGE value="Workspace changes!" />
+    <MESSAGE value="KNN Algorithm approach!" />
+    <option name="LAST_COMMIT_MESSAGE" value="KNN Algorithm approach!" />
   </component>
 </project>

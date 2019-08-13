@@ -1,4 +1,8 @@
-import java.lang.reflect.Array;
+/*
+    Basic Quicksort Algorithm
+    Autor: Mike Nielsen
+    Project: JNutshell
+ */
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,12 +14,12 @@ public class QSort {
             List<Integer> less = new ArrayList<>();
             List<Integer> greater = new ArrayList<>();
 
-            for (int i = 0; i < array.size(); i++) {
-                if (array.get(i) < pivot){
-                    less.add(array.get(i));
+            for (int a : array) {
+                if (a < pivot){
+                    less.add(a);
                 }
-                else if (array.get(i) > pivot){
-                    greater.add(array.get(i));
+                else if (a > pivot){
+                    greater.add(a);
                 }
             }
             array.clear();
