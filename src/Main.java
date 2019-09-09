@@ -1,3 +1,5 @@
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -6,8 +8,14 @@ public class Main {
 
     public static void main(String[] args) {
 
+        WeatherStream weatherStream = new WeatherStream("eabbf3f8b05e66dbbd3f99c7b8a59a69", WeatherStream.UnitsForm.metric);
+        weatherStream.makeRequest("New York");
+    }
+
+
+    public void OldMain() {
         List<Integer> array = new ArrayList<>(Arrays.asList(190, 4, 88, 33, 2, 19, 177, 9
-        , 78, 12, 16, 99, 30, 167));
+                , 78, 12, 16, 99, 30, 167));
 
         QSort quickSort = new QSort();
         quickSort.sort(array);
@@ -25,6 +33,6 @@ public class Main {
         double distance = KNearest.distance(paul.getKValues(), justin.getKValues());
 
         System.out.println("Distance = " + distance);
-
     }
+
 }
