@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        WeatherStream weatherStream = new WeatherStream("eabbf3f8b05e66dbbd3f99c7b8a59a69", WeatherStream.UnitsForm.metric);
+        WeatherStream weatherStream = new WeatherStream("{YOUR API KEY}", WeatherStream.UnitsForm.metric);
         weatherStream.makeRequest("New York");
     }
 

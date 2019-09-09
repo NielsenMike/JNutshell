@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c29ba77-49f2-4fb0-844c-fdf8405a6ef3" name="Default Changelist" comment="Wrote a Http Request class for requesting weather data on OpenWeatherAPI">
-      <change afterPath="$PROJECT_DIR$/src/HttpRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WeatherStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8c29ba77-49f2-4fb0-844c-fdf8405a6ef3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -106,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565704981776</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Wrote a Http Request class for requesting weather data on OpenWeatherAPI">
+      <created>1568044439769</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1568044439769</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
