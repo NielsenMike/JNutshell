@@ -1,5 +1,3 @@
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -7,9 +5,28 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
+        Main main = new Main();
+        if(args.length > 0){
+            if(args[0].matches("weather")){
+                if(args.length > 1)
+                {
+                    String argument = "";
+                    for(int i=1; i < args.length; i++)
+                    {
+                        argument = argument.concat(args[i] + " ");
+                    }
+                    main.callWeather(argument);
+                }
+            }
+        }
+    }
 
-        WeatherStream weatherStream = new WeatherStream("{YOUR API KEY}", WeatherStream.UnitsForm.metric);
-        weatherStream.makeRequest("New York");
+    public void callWeather(String city){
+        WeatherStream weatherStream = new WeatherStream("{YOUR APIKEY}", WeatherStream.UnitsForm.metric);
+        WeatherStream.WeatherData data = weatherStream.requestWeatherData(city);
+        System.out.println("Weather in " + city);
+        System.out.println("Condition " + data.type + " with " + data.description);
+        System.out.println("Temperature " + data.temperature);
     }
 
 

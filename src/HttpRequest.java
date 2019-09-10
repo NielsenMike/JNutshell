@@ -37,7 +37,7 @@ public class HttpRequest {
         return false;
     }
 
-    public void writeResponseToFile(String pathname){
+    public void writeResponseToFile(String pathname) {
         try {
 
             Path path = Paths.get(pathname);
@@ -48,6 +48,8 @@ public class HttpRequest {
         }
     }
 
-
+    public byte[] getResponse() {
+        return this.response;
+    }
 
 }
