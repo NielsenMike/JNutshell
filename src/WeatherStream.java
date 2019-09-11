@@ -9,6 +9,7 @@ import java.io.IOException;
 public class WeatherStream {
 
     class WeatherData{
+        public String city;
         public String type;
         public String description;
         public String temperature;
@@ -56,6 +57,7 @@ public class WeatherStream {
                 JSONObject data = (JSONObject) jsonParser.parse(new String(response));
                 JSONObject weather =(JSONObject)((JSONArray) data.get("weather")).get(0);
                 JSONObject description = (JSONObject) data.get("main");
+                weatherData.city = city;
                 weatherData.type = weather.get("main").toString();
                 weatherData.description = weather.get("description").toString();
                 weatherData.temperature = description.get("temp").toString();

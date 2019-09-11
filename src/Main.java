@@ -1,3 +1,5 @@
+import javax.swing.*;
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -21,12 +23,43 @@ public class Main {
         }
     }
 
+    public void showGUI(WeatherStream.WeatherData data){
+        JFrame frame = new JFrame("My First GUI");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(500,200);
+        frame.setMaximumSize(new Dimension(500, 200));
+        frame.setMinimumSize(new Dimension(500, 200));
+        frame.setResizable(false);
+
+        JPanel panelTop = new JPanel();
+        panelTop.setPreferredSize(new Dimension(500, 50));
+        JLabel label = new JLabel("Enter City");
+
+        JTextField textField = new JTextField(20);
+        JButton send = new JButton("Send");
+        panelTop.add(label);
+        panelTop.add(textField);
+        panelTop.add(send);
+
+        JPanel panelBottom = new JPanel();
+        panelBottom.setPreferredSize(new Dimension(500,50));
+        JLabel weatherLabel = new JLabel("Weather in " + data.city + " " +
+                data.type + " with " + data.description + " and temperature " + data.temperature);
+        panelBottom.add(weatherLabel);
+        panelBottom.add(weatherLabel);
+        panelBottom.add(weatherLabel);
+
+        frame.getContentPane().add(BorderLayout.NORTH, panelTop);
+        frame.getContentPane().add(BorderLayout.SOUTH, panelBottom);
+        frame.setVisible(true);
+
+
+    }
+
     public void callWeather(String city){
         WeatherStream weatherStream = new WeatherStream("{YOUR APIKEY}", WeatherStream.UnitsForm.metric);
         WeatherStream.WeatherData data = weatherStream.requestWeatherData(city);
-        System.out.println("Weather in " + city);
-        System.out.println("Condition " + data.type + " with " + data.description);
-        System.out.println("Temperature " + data.temperature);
+        this.showGUI(data);
     }
 
 
